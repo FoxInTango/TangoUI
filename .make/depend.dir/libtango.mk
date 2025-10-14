@@ -1,12 +1,12 @@
 DEPEND_TARGETS += libtango.recursive
 ECHO_TARGETS += libtango.echo
 libtango.recursive:
-	@echo SUPER_MAKE_DIR=/volumes/llama/home/alpine/applications/tango/               >> /volumes/llama/home/alpine/libraries/libtango/.make/super
-	@echo SUPER_MAKE_CONFIG_DIR=/volumes/llama/home/alpine/applications/tango/.make >> /volumes/llama/home/alpine/libraries/libtango/.make/super
-	cd /volumes/llama/home/alpine/libraries/libtango/ && make recursive && make install
-	-rm /volumes/llama/home/alpine/libraries/libtango/.make/super
+	@echo SUPER_MAKE_DIR=/Users/lidali/alpine/applications/tango/               >> /Users/lidali/alpine/libraries/libtango/.make/super
+	@echo SUPER_MAKE_CONFIG_DIR=/Users/lidali/alpine/applications/tango/.make >> /Users/lidali/alpine/libraries/libtango/.make/super
+	cd /Users/lidali/alpine/libraries/libtango/ && /Applications/Xcode.app/Contents/Developer/usr/bin/make recursive && /Applications/Xcode.app/Contents/Developer/usr/bin/make install
+	-rm /Users/lidali/alpine/libraries/libtango/.make/super
 libtango.echo:
-	@echo SUPER_MAKE_DIR=/volumes/llama/home/alpine/applications/tango/               >> /volumes/llama/home/alpine/libraries/libtango/.make/super
-	@echo SUPER_MAKE_CONFIG_DIR=/volumes/llama/home/alpine/applications/tango/.make >> /volumes/llama/home/alpine/libraries/libtango/.make/super
-	cd /volumes/llama/home/alpine/libraries/libtango/ && make echo
-	-rm /volumes/llama/home/alpine/libraries/libtango/.make/super
+	@echo SUPER_MAKE_DIR=/Users/lidali/alpine/applications/tango/               >> /Users/lidali/alpine/libraries/libtango/.make/super
+	@echo SUPER_MAKE_CONFIG_DIR=/Users/lidali/alpine/applications/tango/.make >> /Users/lidali/alpine/libraries/libtango/.make/super
+	cd /Users/lidali/alpine/libraries/libtango/ && /Applications/Xcode.app/Contents/Developer/usr/bin/make echo
+	-rm /Users/lidali/alpine/libraries/libtango/.make/super
